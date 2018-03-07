@@ -2,7 +2,6 @@ import React from 'react';
 
 import HeaderBar from "../components/home/HeaderBar.jsx";
 import HolaAboutMe from "../components/profile/HolaAboutMe.jsx";
-import PerfilCard from "../components/profile/PictureComponent.jsx";
 
 
 export default class Profile extends React.Component {
@@ -52,6 +51,7 @@ export default class Profile extends React.Component {
                         <h4 className="card-title">{`${this.state.profile.first_name} ${this.state.profile.last_name}`}</h4>
                         <h6>Mentor</h6>
                         <p className="card-text">{"View GitHub Profile: " + `https://github.com/${this.state.profile.github_link}`}</p>
+                        <p className="card-text">{`${this.state.profile.about_me}`}</p>
                       </div>
                     </div>
                   </div>
