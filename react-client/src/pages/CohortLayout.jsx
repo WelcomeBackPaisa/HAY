@@ -17,6 +17,7 @@ const CohortLayout = (props) => (
         <div>
         <div id='fondoHomeCH1'>
         <MentorList mentors={props.data.mentors} match={props.match}/>
+        <div><textarea>console.log('holaf was a snowman');</textarea></div> 
         <StudentList students={props.data.students} match={props.match}/>
         <ImageCollections />
       </div>

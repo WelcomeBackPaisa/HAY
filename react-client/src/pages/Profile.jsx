@@ -43,7 +43,7 @@ export default class Profile extends React.Component {
               <div className="row">
                 <div className="col-md-3">
                 </div>
-                <div id='ProfileCard' className="col-md-6">
+                <div id='ProfileCard' className="col-md-25 offset-md-3">
                   <div id="card5" className="card">
                     <div className="Nicolas-Card" style={{width: "18rem"}}>
                       <img className="card-img-top-Nicolas" src={`https://i.imgur.com/${this.state.profile.picture_path}.jpg`}/>
@@ -57,6 +57,7 @@ export default class Profile extends React.Component {
                 </div>
                 <div className="col-md-3">
                 </div>
+                <div><textarea>console.log('holaf was a snowman');</textarea></div>
               </div>
             </section>
             <br/>
