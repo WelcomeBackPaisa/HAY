@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import {BrowserRouter, Route} from 'react-router-dom';
-import {MuiThemeProvider} from 'material-ui/styles';
-
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import PrimaryLayout from "./PrimaryLayout.jsx";
 
 class App extends React.Component {
@@ -10,7 +9,7 @@ class App extends React.Component {
 render(){
   return(
     <BrowserRouter>
-    <MuiThemeProvider>
+    <MuiThemeProvider >
       <Route path="/" component={PrimaryLayout} />
     </MuiThemeProvider>
   </BrowserRouter>

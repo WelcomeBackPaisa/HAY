@@ -51,6 +51,17 @@ const getSingleProfile = function(profId) {
   })
 };
 
+const aboutMeText = function() {
+  return new Promise((resolve, reject) => {
+    connection.query('SELECT * FROM profiles WHERE about_me = "" ', (err, data) => {
+      if (err) {
+        return reject(err);
+      }
+    return resolve(data);
+    })
+  })
+};
+
 const getGallery = function() {
   return new Promise((resolve, reject) => {
     connection.query('SELECT * FROM images', (err, data) => {
