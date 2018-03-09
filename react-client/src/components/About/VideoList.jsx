@@ -14,12 +14,6 @@ var VideoList = (props) =>(
   <VideoListEntry/>
 </div>
 );
-VideoList.propTypes = {
-  videos: React.PropTypes.array.isRequired
-};
-
-
-window.VideoList = VideoList;
 
 
 export default VideoList;

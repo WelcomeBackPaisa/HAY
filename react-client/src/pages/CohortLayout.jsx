@@ -17,7 +17,12 @@ const CohortLayout = (props) => (
         <div>
         <div id='fondoHomeCH1'>
         <MentorList mentors={props.data.mentors} match={props.match}/>
-        <div><textarea>console.log('holaf was a snowman');</textarea></div> 
+        <div><textarea>console.log('holaf was a snowman');</textarea>
+          <iframe className="embed-responsive-item" width="600" height="420"
+            src="https://www.youtube.com/embed/xB5ceAruYrI"
+            frameBorder="0" allowFullScreen>
+          </iframe>
+        </div>
         <StudentList students={props.data.students} match={props.match}/>
         <ImageCollections />
       </div>
