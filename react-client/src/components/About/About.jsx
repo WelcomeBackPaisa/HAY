@@ -1,5 +1,5 @@
-import VideoPlayer from './VideoPlayer.jsx'
-
+import VideoPlayer from './VideoPlayer.jsx';
+import VideoList from './VideoList.jsx';
 import React from 'react';
 
 class AboutUs extends React.Component{
@@ -17,7 +17,13 @@ render(){
   return (
   <div>
     <h1>'this is to i can see you better'</h1>
-    <VideoPlayer/>
+      <div className="col-md-7">
+        <VideoPlayer/>
+      </div>
+      <div className="col-md-5">
+          <VideoList />
+          {console.log('video list is working')}
+      </div>
   </div>
   )
 }
