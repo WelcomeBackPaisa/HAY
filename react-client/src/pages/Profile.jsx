@@ -2,7 +2,6 @@ import React from 'react';
 
 import HeaderBar from "../components/home/HeaderBar.jsx";
 import HolaAboutMe from "../components/profile/HolaAboutMe.jsx";
-import PerfilCard from "../components/profile/PictureComponent.jsx";
 
 
 export default class Profile extends React.Component {

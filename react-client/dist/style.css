@@ -26,6 +26,11 @@
   margin-bottom: 0%;
 }
 
+.news{
+  background-color: black;
+  color: white;
+  height: 200%;
+}
 /*This is where the modification of the logo row ends*/
 
 /*This is where the 1st row can be modified, where the quotes are rendering

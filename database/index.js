@@ -62,10 +62,21 @@ const getGallery = function() {
   })
 };
 
+const getNewsArticle = function(){
+  return new Promise((resolve,reject)=>{
+    connection.query('SELECT * FROM newsarticle', (err,data)=>{
+      if(err){
+        return reject(err);
+      }
+   return resolve(data)
+    })
+  })
+}
 module.exports = {
   getHomeQuotes,
   getCohortStudents,
   getCohortMentors,
   getSingleProfile,
-  getGallery
+  getGallery,
+  getNewsArticle
 };
