@@ -41,8 +41,6 @@ export default class Profile extends React.Component {
               <br/>
             <section className="LaDeArriba-section">
               <div className="row">
-                <div className="col-md-3">
-                </div>
                 <div id='ProfileCard' className="col-md-6">
                   <div id="card5" className="card">
                     <div className="Nicolas-Card" style={{width: "18rem"}}>
@@ -56,7 +54,11 @@ export default class Profile extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-6">
+                  <iframe className="embed-responsive-item" width="600" height="420"
+                   src={`https://www.youtube.com/embed/${this.state.profile.embeded_video}`}
+                   frameBorder="0" allowFullScreen>
+                  </iframe>
                 </div>
               </div>
             </section>

@@ -73,10 +73,23 @@ const getGallery = function() {
   })
 };
 
+const getEmbededId = function() {
+  return new promise((resolve, reject)=> {
+    connection.query('SELECT * FROM embeded_video', (err, data) =>{
+      if(err){
+        return reject(err);
+      }
+      return resolve(data);
+    })
+  })
+}
+
 module.exports = {
   getHomeQuotes,
   getCohortStudents,
   getCohortMentors,
   getSingleProfile,
-  getGallery
+  aboutMeText,
+  getGallery,
+  getEmbededId
 };
