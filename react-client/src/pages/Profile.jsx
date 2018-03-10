@@ -59,7 +59,7 @@ export default class Profile extends React.Component {
                 </div>
                 <div><textarea>console.log('holaf was a snowman');</textarea>
                   <iframe className="embed-responsive-item" width="600" height="420"
-                    src="https://www.youtube.com/embed/rnEB2F_v_cE"
+                    src={`https://www.youtube.com/embed/${this.state.profile.embeded_video}`}
                     frameBorder="0" allowFullScreen>
                   </iframe>
                 </div>

@@ -40,6 +40,7 @@ exports.getGallery = (req, res) => {
       db.getGallery()
     ])
       .then(data => {
+        console.log('hey');
         res.status(200).send(data)
       })
       .catch(err => { console.log(err) })
