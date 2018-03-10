@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const route = require("./routes");
-const db = require('../database/index');
+const db = require('../database/index.js');
 const app = express();
 
 //middleware
@@ -17,6 +17,7 @@ app.get("/home-pics", route.getGallery)
 
 app.get("/cohort", route.getCohortMembers)
 
+app.get("/news", route.getNewsArticle)
 //GET profile/:id is not used
 //app.get('/profile/:id', route.renderProfile)
 

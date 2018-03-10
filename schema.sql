@@ -4,6 +4,23 @@ CREATE DATABASE yearbook;
 
 USE yearbook;
 
+CREATE TABLE newsarticle(
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  title varchar(255),
+  thumbnail varchar(100),
+  description TEXT,
+  url varchar(255)
+);
+
+INSERT INTO newsarticle (title,thumbnail,description,url) VALUES("Walstreet Journal","http://i66.tinypic.com/fei808.jpg","Hola Code looks like any other coding academy, with twenty-and thirty-somethings seated in computer-lined rows eager to learn software programming and land a good job.","http://www.wsj.com/video/mexicos-solution-to-silicon-valleys-immigration-problem/E71EE242-09C9-4D65-BFAE-A05DDF8B9C0B.html");
+INSERT INTO newsarticle (title,thumbnail,description,url) VALUES("<hola code/>","http://i65.tinypic.com/154abs6.jpg","hola<code> is a Mexican social enterprise with the mission of promoting access to high demand employment for returned youth to the country from the United States. By taking advantage of the growing demand for software engineers and the enormous potential talent of mexican youth.","http://holacode.com");
+INSERT INTO newsarticle (title,thumbnail,description,url) VALUES("Marketplace","http://i66.tinypic.com/5myecn.jpg","Many young unauthorized immigrants who were taken to the U.S. as children are considering their options as the Deferred Action for Childhood Arrivals program is set to expire in early March. A few have returned to Mexico, looking for opportunities they didn’t have in the U.S.","https://www.marketplace.org/2018/02/22/tech/some-dreamers-returning-mexico-seek-better-opportunities");
+INSERT INTO newsarticle (title,thumbnail,description,url) VALUES("Medium","http://i64.tinypic.com/21oror9.jpg","When I graduated Hack Reactor in September 2017, I began the job hunt in San Francisco, curious to tap into the Silicon Valley market. With the bright-eyed curiosity of a young alum, I began interviewing with a multitude of companies but my lack of work eligibility made it difficult to continue with the job search.","https://medium.com/@gbatra17/update-teaching-at-hola-code-mexico-8f25dec623f8");
+INSERT INTO newsarticle (title,thumbnail,description,url) VALUES("The Human Connection Project","http://i68.tinypic.com/rmuqf7.jpg","Pink refractions dance 180 degrees across the Mexico City skyline. An air of organized chaos circulates through the 11th floor of WeWork Cervantes - hackers, or mentors as they will be referred to for the next six months, dart between rows of computers, installing software and changing passwords, booting and rebooting.","https://www.thehumanconnectionproject.com/response-and-recovery-mexico-city/");
+INSERT INTO newsarticle (title,thumbnail,description,url) VALUES("Generosity","http://i68.tinypic.com/2vdqwkp.jpg","We are Hola </code>: A social enterprise that is focused on providing opportunities for return migrants and refugees from the United States.","https://www.generosity.com/emergencies-fundraising/holacode-hardship-fund");
+INSERT INTO newsarticle (title,thumbnail,description,url) VALUES("<hola code/> Facebook","http://i65.tinypic.com/154abs6.jpg","Holacode is about embracing immigrants that are coming back from the US to Mexico ,Holacode is about welcoming people to technology, Holacode is about creating social mobility through technology","https://www.facebook.com/Holacode1/");
+
+
 CREATE TABLE quotes (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   source varchar(55),
