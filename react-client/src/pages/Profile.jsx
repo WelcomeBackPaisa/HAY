@@ -55,7 +55,7 @@ export default class Profile extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-10 offset-md-3">
                 </div>
                 <div><textarea>console.log('holaf was a snowman');</textarea>
                   <iframe className="embed-responsive-item" width="600" height="420"
