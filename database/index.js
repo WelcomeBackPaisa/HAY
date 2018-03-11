@@ -51,6 +51,17 @@ const getSingleProfile = function(profId) {
   })
 };
 
+const aboutMeText = function() {
+  return new Promise((resolve, reject) => {
+    connection.query('SELECT * FROM profiles WHERE about_me = "" ', (err, data) => {
+      if (err) {
+        return reject(err);
+      }
+    return resolve(data);
+    })
+  })
+};
+
 const getGallery = function() {
   return new Promise((resolve, reject) => {
     connection.query('SELECT * FROM images', (err, data) => {
@@ -62,17 +73,6 @@ const getGallery = function() {
   })
 };
 
-const getNewsArticle = function(){
-  return new Promise((resolve,reject)=>{
-    connection.query('SELECT * FROM newsarticle', (err,data)=>{
-      if(err){
-        return reject(err);
-      }
-   return resolve(data)
-    })
-  })
-}
-
 const getEmbededId = function() {
   return new promise((resolve, reject)=> {
     connection.query('SELECT * FROM embeded_video', (err, data) =>{
@@ -83,12 +83,13 @@ const getEmbededId = function() {
     })
   })
 }
+
 module.exports = {
   getHomeQuotes,
   getCohortStudents,
   getCohortMentors,
   getSingleProfile,
+  aboutMeText,
   getGallery,
-  getNewsArticle,
   getEmbededId
 };
