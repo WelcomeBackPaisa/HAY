@@ -6,7 +6,7 @@ import HeaderBar from "../components/home/HeaderBar.jsx";
 import HolaCoHort from "../components/cohort/HolaCohort.jsx";
 import MentorList from "../components/cohort/MentorList.jsx";
 import StudentList from "../components/cohort/StudentList.jsx";
-import ImageCollections from '../components/cohort/ImageCollections.jsx'
+import ImageCollections from "../components/cohort/ImageCollections.jsx";
 
 const CohortLayout = (props) => (
       <div>
