@@ -20,8 +20,9 @@
 }
 
 .img-responsive-HolaCodeYB{
+  color: #7CFC00;
   height: 70%;
-  width: 100%;
+  width: 70%;
   margin-top: 0px;
   margin-bottom: 0%;
 }
@@ -38,9 +39,10 @@
  }
  /*Modifies only the quotes rendering in the home page*/
 #QuotesInTheCenter{
-  color: green;
-  font-style: italic;
-  font-size: 35px;
+  color: #000000;
+  font-family:"Lato", Black;
+  font-size: 55px;
+  font-weight: 999;
 }
 
 /*This is where the modification of the 1st row end*/
@@ -75,17 +77,22 @@
 
 /*background pic for Cohorts.jsx*/
 #fondoCohort{
-   background-color: white;);
+
+   background-color: white;
+}
+
+#fondoHomeCH1{
+  background-image: url("https://befunkycartoonizer.s3.amazonaws.com/C4470910-1520738420315081large.jpg")
 }
 
 /*background pic for Home.jsx*/
 #fondoBannerMatrix{
   width: 100%;
-  height: 300px;
-  background-image: url("https://i.imgur.com/8IbWFkl.jpg");
+  height: 250px;
+  background-image: url("http://studiocalico.typepad.com/.a/6a0133f3181fde970b01676899a714970b-pi");
 }
 #fondoHome{
-  background-color: white;
+  background-image: url("https://static1.squarespace.com/static/59966ee4cd0f68504835c1f8/t/5a36c16f24a6949ae3f68f3b/1513537907031/student+pictures.jpg");
 }
 /*This is where you can modify the tab all the way the top of the home page*/
 #appBar{
@@ -108,61 +115,61 @@ in the COHORT in cohort.jsx*/
   box-shadow: 10px 8px 30px #fff;
   margin: 25px 25px 25px 25px;
   background-color: #92a8d1;
-  border: 8px groove orange;
+  border: 10px groove orange;
   border-top-left-radius: 25px;
-border-top-right-radius: 25px;
-border-bottom-right-radius: 25px;
-border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 #teachersFN{
   color: white;
-  font-style: italic;
-  font-size: 30px;
+  font-family: "Lato";
+  font-size: 38px;
+  font-weight: 999;
   text-decoration: underline;
   outline: thin ridge green;
 }
 #teachersLN{
   color: white;
-  font-style: italic;
-  font-size: 30px;
-  text-decoration: underline;
+  font-family: "Lato";
+  font-size: 36px;
+  font-weight: 999;
   outline: thin ridge red;
 }
 #teachersGH{
-  color: white;
-  font-style: italic;
-  font-size: 30px;
-  text-decoration: underline;
+  color: black;
+  font-family: "Lato";
+  font-size: 36px;
   outline: thin ridge yellow;
 }
 #studentsPic{
   box-shadow: 10px 8px 30px #fff;
   margin: 25px 25px 25px 25px;
   background-color: #92a8d1;
-  border: 8px groove orange;
+  border: 10px groove orange;
   border-top-left-radius: 25px;
 border-top-right-radius: 25px;
 border-bottom-right-radius: 25px;
 border-bottom-left-radius: 25px;
 }
-#studentsFN{
-  color: white;
-  font-style: italic;
-  font-size: 30px;
-  text-decoration: underline;
+#studentsF-LN{
+  color: black;
+  font-family: "Lato";
+  font-size: 35px;
+  font-weight: 999;
   outline: thin ridge green;
 }
 #studentsLN{
-  color: white;
-  font-style: italic;
-  font-size: 30px;
+  color: black;
+  font-family: "Lato";
+  font-size: 48px;
   text-decoration: underline;
   outline: thin ridge red;
 }
 #studentsGH{
-  color: white;
+  color: black;
   font-style: italic;
-  font-size: 30px;
+  font-size: 36px;
   text-decoration: underline;
   outline: thin ridge yellow;
 }
@@ -172,8 +179,17 @@ border-bottom-left-radius: 25px;
   width: 100px
 }
 /*This is to modify the paper in all the cards in home.jsx*/
+.card-body{
+  background-color: black;
+}
+.card-text{
+  color: white;
+}
+.card-title{
+  color: white;
+}
 .card{
-  width: 389px;
+  width: 287px;
   border-color: pink;
 }
 .card-img-top-Marcela{
@@ -211,34 +227,23 @@ border-bottom-left-radius: 25px;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /*This is for the Cohort page*/
 .Cohort-logo-section{
-  height: 30px;
+  height: 287px;
    width: 100%;
-   padding-top: 0%;
-   padding-bottom: 0px;
+   padding-top: 100%;
+   padding-bottom: 50px;
    text-align: center;
  }
  #logo{
    width: 80%;
    margin-top: 0px;
-   height: 250px;
+   height: 50px;
  }
 
- #contentWithinBlueWallpaperCH1{
-  height: 110%;
-  width: 100%;
-  margin-top: 125px;
-  margin-bottom: 0%;
-}
-
 .img-responsive-HolaCodeCH1{
-  height: 80%;
-  width: 100%;
+  height: 30%;
+  width: 50%;
   margin-top: 0px;
   margin-bottom: 0%;
-}
-
-#fondoHomeCH1{
-  background-color: lightblue;
 }
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -258,7 +263,7 @@ border-bottom-left-radius: 25px;
 
  #contentWithinBlueWallpaperProfile{
   height: 80%;
-  width: 100%;
+  width: 250%;
   margin-top: 125px;
   margin-bottom: 5%;
 }
@@ -274,11 +279,26 @@ border-bottom-left-radius: 25px;
   background-color: lightblue;
 }
 #fondoPerfil{
-   background-image: url('https://i.imgur.com/fK72Vko.jpg');
+   background-image: url('https://befunkycartoonizer.s3.amazonaws.com/C4470910-1520739642780370large.jpg');
 }
 #ProfileCard{
-  padding-left: 175px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding-left: 120px;
 }
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#card5 {
+  animation: fadein 6s;
+}
+
 #card5{
-  margin-right: 100px;
+  margin-right: 30px;
 }

@@ -9,7 +9,7 @@ const HomeGallery = (props) => (
           <div className="Diana's-Card" style={{width: "18rem"}}>
             <img className="card-img-top-Diana" src="https://i.imgur.com/uLhnphg.jpg?1" alt="Diana's Pro Pic"/>
             <div className="card-body">
-              <h4 className="card-title">Diana Izquierdo</h4>
+              <h4 className="card-title" >Diana Izquierdo</h4>
                 <h6>COO</h6>
                   <p className="card-text">Diana likes to make things happen and work for projects that enable her to
                     learn different things. Her everyday adventures in Hola Code include being a problem solver,
@@ -29,7 +29,6 @@ const HomeGallery = (props) => (
         <br/>
         <br/>
         <br/>
-          <h3>"Gallery's render part goes in here"</h3>
       </div>
       <div className="col-md-3">
         <div id="card2" className="card">
