@@ -4,6 +4,23 @@ CREATE DATABASE yearbook;
 
 USE yearbook;
 
+CREATE TABLE newsarticle(
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  title varchar(255),
+  thumbnail varchar(100),
+  description TEXT,
+  url varchar(255)
+);
+
+INSERT INTO newsarticle (title,thumbnail,description,url) VALUES("Walstreet Journal","http://i66.tinypic.com/fei808.jpg","Hola Code looks like any other coding academy, with twenty-and thirty-somethings seated in computer-lined rows eager to learn software programming and land a good job.","http://www.wsj.com/video/mexicos-solution-to-silicon-valleys-immigration-problem/E71EE242-09C9-4D65-BFAE-A05DDF8B9C0B.html");
+INSERT INTO newsarticle (title,thumbnail,description,url) VALUES("<hola code/>","http://i65.tinypic.com/154abs6.jpg","hola<code> is a Mexican social enterprise with the mission of promoting access to high demand employment for returned youth to the country from the United States. By taking advantage of the growing demand for software engineers and the enormous potential talent of mexican youth.","http://holacode.com");
+INSERT INTO newsarticle (title,thumbnail,description,url) VALUES("Marketplace","http://i66.tinypic.com/5myecn.jpg","Many young unauthorized immigrants who were taken to the U.S. as children are considering their options as the Deferred Action for Childhood Arrivals program is set to expire in early March. A few have returned to Mexico, looking for opportunities they didn’t have in the U.S.","https://www.marketplace.org/2018/02/22/tech/some-dreamers-returning-mexico-seek-better-opportunities");
+INSERT INTO newsarticle (title,thumbnail,description,url) VALUES("Medium","http://i64.tinypic.com/21oror9.jpg","When I graduated Hack Reactor in September 2017, I began the job hunt in San Francisco, curious to tap into the Silicon Valley market. With the bright-eyed curiosity of a young alum, I began interviewing with a multitude of companies but my lack of work eligibility made it difficult to continue with the job search.","https://medium.com/@gbatra17/update-teaching-at-hola-code-mexico-8f25dec623f8");
+INSERT INTO newsarticle (title,thumbnail,description,url) VALUES("The Human Connection Project","http://i68.tinypic.com/rmuqf7.jpg","Pink refractions dance 180 degrees across the Mexico City skyline. An air of organized chaos circulates through the 11th floor of WeWork Cervantes - hackers, or mentors as they will be referred to for the next six months, dart between rows of computers, installing software and changing passwords, booting and rebooting.","https://www.thehumanconnectionproject.com/response-and-recovery-mexico-city/");
+INSERT INTO newsarticle (title,thumbnail,description,url) VALUES("Generosity","http://i68.tinypic.com/2vdqwkp.jpg","We are Hola </code>: A social enterprise that is focused on providing opportunities for return migrants and refugees from the United States.","https://www.generosity.com/emergencies-fundraising/holacode-hardship-fund");
+INSERT INTO newsarticle (title,thumbnail,description,url) VALUES("<hola code/> Facebook","http://i65.tinypic.com/154abs6.jpg","Holacode is about embracing immigrants that are coming back from the US to Mexico ,Holacode is about welcoming people to technology, Holacode is about creating social mobility through technology","https://www.facebook.com/Holacode1/");
+
+
 CREATE TABLE quotes (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   source varchar(55),
@@ -79,7 +96,7 @@ VALUES ("Eduardo", "Urrutia", "student", 1, "Eduardo091", "jVwRTYJ", "I like foo
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me, embeded_video)
 VALUES ("Heber", "Gutierrez", "student", 1, "HeberGutierrez", "jxaNFiX", "Don't stop dreaming just because you had a nigthmare. Almost every successful person begins with two beliefs: the future can be better than the present, and i have the power to make it so.","pVAmgmPsl18");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me, embeded_video)
-VALUES ("Jaqueline", "Lopez", "student", 1, "Jacqueline930", "1UTAvaD", "I Heart HolaCode. It gave me the opportunity of becoming a software engineer  by being someone I have identified since I have knowledge, a woman. HolaCode gave opened doors to be freely, ME, and to break all stereotypes, cliches for trans women.  I want to thank all staff and peers for being such open-minded, respectful, and lovely.","aeTUOrYak8c");
+VALUES ("Jaqueline", "Lopez", "student", 1, "Jacqueline930", "1UTAvaD", "I Heart HolaCode. It gave me the opportunity of becoming a software engineer  by being someone I have identified since I have knowledge, a woman. HolaCode gave opened doors to be freely, ME, and to break all stereotypes, cliches for trans women.  I want to thank all staff and peers for being such open-minded, respectful, and lovely.","aeTUOrYak8c");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me, embeded_video)
 VALUES ("Javier", "Solis", "student", 1, "ElizaldeJE", "swc5HyP", "Adolf Hitler, 20 April 1889 – 30 April 1945, was a German politician who was the leader of the Nazi Party (Nationalsozialistische Deutsche Arbeiterpartei; NSDAP), Chancellor of Germany from 1933 to 1945 and Führer ('Leader') of Nazi Germany from 1934 to 1945.","78ii7obZtQ4");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me, embeded_video)
@@ -103,7 +120,7 @@ VALUES ("Miriam", "Alvarez", "student", 1, "miriam30", "YMqvYSw", "uhmm somethin
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me, embeded_video)
 VALUES ("Ricardo", "Varona", "student", 1, "Varonss", "yUfGNbd", "My name is Richie from CDMX, I'm a father of 2 kiddos and a husband. I´ve done high school back in Manchester, TN. I like sports, movies, listening to music, playing chess, and be able to help out people in so many different ways.","m90R3AS1L1s");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me, embeded_video)
-VALUES ("Scott", "Yoon", "mentor", 1, "scottyoon221", "ivnYqOj", "Scott moved to HolaCode from San Francisco, California. He studied Statistics at University of California, Berkeley and has worked in various software companies including Adobe System and Cisco System as a software test development engineer. He is also a recent graduate of Hack Reactor and is currently mentoring students in the same school to help them realize their dreams. In his spare time, he likes to travel and make new friends.","78ii7obZtQ4");
+VALUES ("Scott", "Yoon", "mentor", 1, "scottyoon221", "ivnYqOj", "Scott moved to HolaCode from San Francisco, California. He studied Statistics at University of California, Berkeley and has worked in various software companies including Adobe System and Cisco System as a software test development engineer. He is also a recent graduate of Hack Reactor and is currently mentoring students in the same school to help them realize their dreams. In his spare time, he likes to travel and make new friends.","AI53kwBmLwA");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me, embeded_video)
 VALUES ("Cornellius", "Ngondo", "mentor", 1, "cngondo", "AWpvT8m", "Cornellius is a software engineer and a mentor. He received his BA in Mathematics and Computer Science from Multimedia University of Kenya. He worked at Moringa School, a coding boot camp based in Kenya where he trained over 100 graduates in both web and mobile applications development and made relevant contributions to the curriculum that the school was using. In addition, he represented his organization at Africa Women in Tech 2015 and Google Developer Group Meetups.","IIpM6PxrDg8");
 INSERT INTO profiles (first_name, last_name, role, cohort, github_link, picture_path, about_me, embeded_video)

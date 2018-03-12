@@ -44,3 +44,14 @@ exports.getGallery = (req, res) => {
       })
       .catch(err => { console.log(err) })
   }
+
+  //get for news articles
+  exports.getNewsArticle=(req,res)=>{
+  Promise.all([
+    db.getNewsArticle()
+  ])
+  .then(data =>{
+    res.status(200).json(data)
+  })
+  .catch(err => {console.log(err)})
+}

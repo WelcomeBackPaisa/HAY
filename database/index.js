@@ -83,6 +83,17 @@ const getEmbededId = function() {
     })
   })
 }
+//news promise
+const getNewsArticle = function(){
+  return new Promise((resolve,reject)=>{
+    connection.query('SELECT * FROM newsarticle', (err,data)=>{
+      if(err){
+        return reject(err);
+      }
+   return resolve(data)
+    })
+  })
+}
 
 module.exports = {
   getHomeQuotes,
@@ -91,5 +102,6 @@ module.exports = {
   getSingleProfile,
   aboutMeText,
   getGallery,
-  getEmbededId
+  getEmbededId,
+  getNewsArticle
 };
